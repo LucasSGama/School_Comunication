@@ -10,6 +10,66 @@ body {
     align-items: center;
 }
 
+
+header {
+    position: fixed;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand {
+    margin-left: 4vw;
+    /* border: 1px solid black; */
+}
+
+.navbar-nav {
+    margin-right: 4vw;
+    gap: 100px;
+}
+
+.Header_Esquerda_Imagem {
+    height: 70px;
+    width: 70px;
+}
+
+/* Ajustes para a navegação */
+.nav-link {
+    font-size: 20px;
+    color: black !important;
+    padding-bottom: 5px;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.menu_hamburguer {
+    font-size: 40px;
+}
+
+@media (max-width: 901.98px) {
+    .navbar-nav {
+        gap: 0;
+    }
+}
+
+
+
 .container {
     border: 4px solid #EF4136;
     width: 1200px;
