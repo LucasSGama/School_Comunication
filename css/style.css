@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+
 
 * {
     margin: 0;
@@ -30,8 +32,8 @@ header {
 }
 
 .Header_Esquerda_Imagem {
-    height: 80px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
 }
 
 /* Ajustes para a navegação */
@@ -58,10 +60,6 @@ header {
     width: 100%;
 }
 
-.Inicio_Main_Conteudo_Principal {
-    margin-top: 150px;
-}
-
 .menu_hamburguer {
     font-size: 40px;
 }
@@ -72,3 +70,219 @@ header {
     }
 }
 
+/* HEADER */
+
+/* MAIN */
+
+.Inicio_Main {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 100px; /* Adiciona um espaço entre o header e o conteúdo */
+    font-family: 'Jomolhari', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+    padding-bottom: 20px;
+
+}
+
+/* Main conteudo principal */
+.Inicio_Main_Conteudo_Principal {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    /* width: 70%; */
+    border-right: 1px solid black;
+    border-right-width: 1px; /* Altera a altura da borda direita para 20px */
+}
+
+
+.Inicio_Main_Conteudo_Principal h1 {
+    border-top: 1px solid black;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.7vw; /* Tamanho do texto em relação à largura da tela */
+    font-weight: bold;
+    /* border: 1px solid black; */
+    word-wrap: break-word; /* Para navegadores antigos */
+    overflow-wrap: break-word; /* Para navegadores modernos */
+    hyphens: auto; /* Permite quebra de palavras com hífen */
+    max-width: 100%; /* Limita a largura máxima do elemento */
+    white-space: normal; /* Permite que o texto quebre em várias linhas */
+}
+
+/* Breakpoint para telas médias */
+@media (max-width: 768px) {
+    .Inicio_Main_Conteudo_Principal h1 {
+         font-size: 2vw; /* Tamanho do texto para telas médias */
+     }
+     .Inicio_Main_Conteudo_Principal {
+        border-right-width: 0; /* Altera a altura da borda direita para 20px */
+        gap: 0;
+     }
+     
+ }
+ 
+ /* Breakpoint para telas pequenas */
+ @media (max-width: 480px) {
+    .Inicio_Main_Conteudo_Principal h1 {
+         font-size: 3vw; /* Tamanho do texto para telas pequenas */
+     }
+ }
+ 
+ .Main_Materia_principal {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.Main_Materia_Principal_Esquerda {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 30%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Main_Materia_Principal_Texto {
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Bordas meio transparentes */
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3vw;
+    font-family: 'Jomolhari', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+}
+
+.Main_Materia_Principal_Texto p {
+    text-align: justify;
+}
+
+/* Breakpoint para telas médias */
+@media (max-width: 768px) {
+    .Main_Materia_Principal_Texto {
+         font-size: 2vw; /* Tamanho do texto para telas médias */
+     }
+ }
+ 
+ /* Breakpoint para telas pequenas */
+ @media (max-width: 480px) {
+    .Main_Materia_Principal_Texto {
+         font-size: 3vw; /* Tamanho do texto para telas pequenas */
+     }
+ }
+
+.Main_Materia_Principal_Direita {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.Main_Materia_Principal_Direita iframe {
+    width: 100%;
+}
+
+@media (max-width: 901.98px) {
+    Main {
+        display: block;
+    }
+    .Main_Materia_principal {
+        flex-direction: column;
+    }
+    .Main_Materia_Principal_Direita_Video {
+        width: 400px;
+        height: 215px;
+    }
+    .Main_Materia_Principal_Esquerda {
+        flex: 1;
+        width: 100%;
+    }
+    
+    .Main_Materia_Principal_Direita {
+        flex: 1;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1222.98px) {
+    .Inicio_Main {
+        flex-direction: column;
+    }
+}
+
+/* Main conteudo principal */
+
+/* VER MAIS */
+.Inicio_Main_Ver_Mais {
+    /* width: 30%; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 640px;
+}
+
+.Inicio_Boxs {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Adiciona um scroll vertical apenas quando necessário */
+    gap: 30px;
+}
+
+.Inicio_Main_Ver_Mais h3 {
+    border-top: 1px solid black;
+    padding-top: 10px;
+    font-weight: bold;
+    color: red;
+}
+
+.Inicio_Box_Veja_Mais {
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 300px;
+    flex-shrink: 0;
+    min-width: 300px;
+}
+
+.Inicio_Box_Veja_Mais iframe {
+    width: 100%;
+}
+
+@media (max-width: 1222.98px) {
+    .Inicio_Boxs {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 901.98px) {
+    .Inicio_Box_Veja_Mais {
+        margin-top: 10px;
+        border: 1px solid black;
+    }
+    .Inicio_Boxs {
+        overflow-x: auto; /* Adiciona um scroll horizontal apenas quando necessário */
+    }
+    .Inicio_Main_Ver_Mais {
+        height: 330px;
+    }
+    
+}
+/* VER MAIS */
+
+.linha_preta_Layout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.linha_preta {
+    width: 90%;
+    border: 1px solid black;
+}
+
+/* MAIN */
