@@ -117,7 +117,7 @@ header {
 /* Breakpoint para telas médias */
 @media (max-width: 768px) {
     .Inicio_Main_Conteudo_Principal h1 {
-         font-size: 2vw; /* Tamanho do texto para telas médias */
+         font-size: 3vw; /* Tamanho do texto para telas médias */
      }
      .Inicio_Main_Conteudo_Principal {
         border-right-width: 0; /* Altera a altura da borda direita para 20px */
@@ -129,7 +129,7 @@ header {
  /* Breakpoint para telas pequenas */
  @media (max-width: 480px) {
     .Inicio_Main_Conteudo_Principal h1 {
-         font-size: 3vw; /* Tamanho do texto para telas pequenas */
+         font-size: 4vw; /* Tamanho do texto para telas pequenas */
      }
  }
  
@@ -172,7 +172,7 @@ header {
  /* Breakpoint para telas pequenas */
  @media (max-width: 480px) {
     .Main_Materia_Principal_Texto {
-         font-size: 3vw; /* Tamanho do texto para telas pequenas */
+         font-size: 4vw; /* Tamanho do texto para telas pequenas */
      }
  }
 
@@ -246,7 +246,11 @@ header {
     border: 1px solid black;
     width: 300px;
     flex-shrink: 0;
-    min-width: 300px;
+    min-width: 400px;
+}
+
+.Inicio_Box_Veja_Mais p {
+    padding-left: 4px;
 }
 
 .Inicio_Box_Veja_Mais iframe {
@@ -257,6 +261,9 @@ header {
     .Inicio_Boxs {
         flex-direction: row;
     }
+    .Inicio_Main_Ver_Mais {
+        height: 330px;
+    }
 }
 
 @media (max-width: 901.98px) {
@@ -266,9 +273,6 @@ header {
     }
     .Inicio_Boxs {
         overflow-x: auto; /* Adiciona um scroll horizontal apenas quando necessário */
-    }
-    .Inicio_Main_Ver_Mais {
-        height: 330px;
     }
     
 }
@@ -286,3 +290,114 @@ header {
 }
 
 /* MAIN */
+
+.Inicio_Textos_Informativos_Background {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Inicio_Textos_Informativos {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.Inicio_Textos_Informativos h1{
+    font-family: 'Jomolhari', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+    font-weight: bold;
+    font-size: 1.7vw;
+    padding: 10px;
+}
+
+.Inicio_Box_Itens_Informativos_normal {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Inicio_Box_Itens_Informativos_invertido{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.Box_Texto_Layout {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Box_Texto_Layout h5 {
+    font-family: 'Jomolhari', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+    font-weight: bold;
+    font-size: 1.7vw;
+}
+
+.Box_Texto_Layout p {
+    font-family: 'Jomolhari', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+    text-align: justify;
+    font-size: 1.7vw;
+
+}
+
+.Inicio_Box_Itens_Informativos_normal img {
+    width: 50%;
+    padding: 20px;
+}
+
+.Inicio_Box_Itens_Informativos_invertido img {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Breakpoint para telas médias */
+@media (max-width: 768px) {
+    .Inicio_Textos_Informativos h1 {
+        font-size: 2vw;
+    }
+    .Box_Texto_Layout h5 {
+         font-size: 2vw; /* Tamanho do texto para telas médias */
+     }
+     .Inicio_Box_Itens_Informativos_normal {
+        flex-direction: column;
+    }
+    .Inicio_Box_Itens_Informativos_normal img {
+        width: 100%;
+    }    
+    .Inicio_Box_Itens_Informativos_invertido {
+        flex-direction: column;
+    }
+    .Inicio_Box_Itens_Informativos_invertido img {
+        width: 100%;
+        padding: 20px;
+    }    
+    .Box_Texto_Layout {
+        width: 100%;
+    }
+    .Box_Texto_Layout p {
+        font-size: 2vw;
+     }
+ }
+ 
+ /* Breakpoint para telas pequenas */
+ @media (max-width: 480px) {
+    .Inicio_Textos_Informativos h1 {
+        font-size: 4vw;
+    }
+    .Box_Texto_Layout h5 {
+         font-size: 4vw; /* Tamanho do texto para telas pequenas */
+     }
+     .Box_Texto_Layout p {
+        font-size: 3.5vw;
+     }
+ }
