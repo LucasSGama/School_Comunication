@@ -567,17 +567,17 @@ header {
  /* Breakpoint para telas médias */
 @media (max-width: 768px) {
     .footer_layout_esquerda h4 {
-        font-size: 3vw;
+        font-size: 3.5vw;
     } 
     .Lousa_Background a {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .footer_layout_direita_Titulo {
-        font-size: 2.5vw;
+        font-size: 4vw;
      }
     
      .footer_layout_direita_Texto {
-        font-size: 2vw;
+        font-size: 3vw;
      }
      .Coruja {
         width: 35%;
