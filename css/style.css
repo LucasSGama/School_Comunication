@@ -401,3 +401,209 @@ header {
         font-size: 3.5vw;
      }
  }
+
+
+ /* FOOTER */
+
+ footer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: red;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+
+ .footer_layout {
+
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+ }
+
+ .footer_layout_esquerda {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+ }
+
+ .footer_layout_esquerda h4 {
+    font-family: 'Inter', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+    font-size: 2vw;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+ }
+
+ .footer_layout_esquerda_inferior {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+ 
+ .Lousa_Background {
+    background-image: url(../img/Quadro_Negro.png);
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-size: cover; /* Cobrir toda a área */
+    background-position: bottom; /* Centralizar a imagem */
+    width: 100%; /* Ajustar a largura para 100% do contêiner */
+    max-width: 400px; /* Definir uma largura máxima */
+    height: 250px; /* Altura fixa */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: flex-start; /* Centralizar o conteúdo dentro do background */
+    border-radius: 20px;
+    box-sizing: border-box; /* Incluir padding e border na largura e altura */
+}
+
+.Lousa_Background a {
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease, border-color 0.3s ease; /* Transição suave */
+}
+
+.Lousa_Background a span {
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease; /* Transição suave */
+    font-family: 'Inter', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+}
+
+.Lousa_Background a span:hover {
+    color: rgb(254, 0, 229);
+}
+
+.Lousa_Background a i {
+    background-color: rgb(254, 0, 229);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.Lousa_Background a i:hover {
+    background-color: white;
+    color: rgb(254, 0, 229);
+}
+ 
+ .Coruja {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .Coruja img {
+    width: 100%;
+    height: 100%;
+ }
+
+ .footer_layout_direita {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-left: 1px solid white;
+ }
+
+ .footer_layout_direita_Titulo {
+    border-top: 1px solid white;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Inter', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+ }
+
+ .footer_layout_direita_Texto {
+    font-weight: bold;
+    font-size: 1vw;
+    color: white;
+    text-align: justify;
+    font-family: 'Inter', serif;
+ }
+
+
+ /* RESPONSIVIDADE DO QUADRO NEGRO */
+ @media (max-width: 768px) {
+    .Lousa_Background {
+        height: 200px; /* Ajustar a altura para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .Lousa_Background {
+        height: 150px; /* Ajustar a altura para telas muito pequenas */
+    }
+}
+/* RESPONSIVIDADE DO QUADRO NEGRO */
+ 
+@media (max-width: 1222.98px) {
+    .footer_layout {
+        flex-direction: column;
+    }
+    .footer_layout_esquerda {
+        width: 100%;
+    }
+    .footer_layout_direita {
+        width: 100%;
+        border-left: 0;
+    }
+    .Coruja {
+        width: 23%;
+     }
+
+}
+ /* Breakpoint para telas médias */
+@media (max-width: 768px) {
+    .footer_layout_esquerda h4 {
+        font-size: 3vw;
+    } 
+    .Lousa_Background a {
+        font-size: 3vw;
+    }
+    .footer_layout_direita_Titulo {
+        font-size: 2.5vw;
+     }
+    
+     .footer_layout_direita_Texto {
+        font-size: 2vw;
+     }
+     .Coruja {
+        width: 35%;
+     }
+    
+ }
+ 
+ /* Breakpoint para telas pequenas */
+ @media (max-width: 680px) {
+    .Coruja {
+        width: 50%;
+     }
+    /* .Inicio_Textos_Informativos h1 {
+        font-size: 4vw;
+    }
+    .Box_Texto_Layout h5 {
+         font-size: 4vw;
+     }
+     .Box_Texto_Layout p {
+        font-size: 3.5vw;
+     } */
+ }
+
+ @media (max-width: 380px) {
+    .Coruja {
+        display: none;
+    }
+}
+ /* FOOTER */
