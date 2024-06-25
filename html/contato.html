@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Comunication</title>
+    <title>School Communication</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/contato.css">
 
+    <!-- Ícone -->
     <link rel="icon" href="../img/SC_icon.png" type="image/x-icon">
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body>
 
+    <!-- Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../img/SC_icon.png" alt="Logo do site" class="Header_Esquerda_Imagem">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon menu_hamburguer"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -43,77 +52,138 @@
         </nav>
     </header>
 
-<!-- Header ------------------------------------------------------------------------------------------------------------------------------ -->
-
+    <!-- Main Content -->
     <main>
         <br><br><br><br><br>
 
         <div class="container">
-
-            <img class="Santa_Catarina" src="../img/SC_icon.png" alt="">
+            <img class="Santa_Catarina" src="../img/SC_icon.png" alt="Ícone de Santa Catarina">
 
             <div class="formulario">
-
-                <label class="label" for="" >E-mail</label> 
-                <input class="input" type="email" id="email" name="email" placeholder="digite seu email aqui" required>
-
-                <br>
-
-                <label class="label" for="" >Nome</label> 
-                <input class="input" type="text" id="username" name="username" placeholder="digite seu nome completo aqui" required>
+                <label class="label" for="email">E-mail</label>
+                <input class="input" type="email" id="email" name="email" placeholder="Digite seu email aqui" required>
 
                 <br>
 
-                <label class="label" for="" >Escola</label> 
-                <input class="input" type="text" id="username" name="username" placeholder="digite o nome de sua escola aqui" required>
+                <label class="label" for="username">Nome</label>
+                <input class="input" type="text" id="username" name="username"
+                    placeholder="Digite seu nome completo aqui" required>
 
                 <br>
 
-                <label class="label" for="" >Escreva sua mensagem abaixo</label> 
-                <textarea class="textarea" type="text" id="username" name="username" placeholder="digite sua mensagem aqui" required></textarea>
+                <label class="label" for="escola">Escola</label>
+                <input class="input" type="text" id="escola" name="escola"
+                    placeholder="Digite o nome de sua escola aqui" required>
+
+                <br>
+
+                <label class="label" for="mensagem">Escreva sua mensagem abaixo</label>
+                <textarea class="textarea" id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui"
+                    required></textarea>
 
                 <br>
 
                 <div class="layout_button">
-                <button class="button" src="../index.html">Enviar</button>
+                    <button type="submit" class="button" id="enviar">Enviar</button>
                 </div>
-
             </div>
         </div>
     </main>
 
-<!-- footer ------------------------------------------------------------------------------------------------------------------------------ -->
-
-<footer>
-    <div class="footer_layout">
-        <div class="footer_layout_esquerda">
-            <h4>Converse com a nossa comunidade:</h4>
-            <div class="footer_layout_esquerda_inferior">
-                <div class="Lousa_Background">
-                    <a href="https://www.instagram.com">
-                        <i class="bi bi-instagram"></i><span>@Sc_Oficial</span>
-                    </a>
-                    <!-- Aqui vai ser os icons e o nome da rede social -->
-                </div>
-                <div class="Coruja">
-                    <img src="../img/Coruja.png" alt="Coruja">
+    <!-- Footer -->
+    <footer>
+        <div class="footer_layout">
+            <div class="footer_layout_esquerda">
+                <h4>Converse com a nossa comunidade:</h4>
+                <div class="footer_layout_esquerda_inferior">
+                    <div class="Lousa_Background">
+                        <a href="https://www.instagram.com">
+                            <i class="bi bi-instagram"></i><span>@Sc_Oficial</span>
+                        </a>
+                    </div>
+                    <div class="Coruja">
+                        <img src="../img/Coruja.png" alt="Imagem de uma coruja">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer_layout_direita">
+            <div class="footer_layout_direita">
                 <p class="footer_layout_direita_Titulo">@Sc_Oficial</p>
-                <p class="footer_layout_direita_Texto">Somos um grupo de alunos apaixonados por tecnologia e
-                    preocupados com questões ambientais,
-                    especialmente relacionadas às enchentes. Nosso objetivo é informar e conscientizar a população
-                    sobre
-                    os riscos e impactos das enchentes, além de oferecer dicas e soluções para prevenção e mitigação
-                    desses eventos. Através de nosso site informativo, esperamos contribuir para a construção de uma
-                    sociedade mais resiliente e preparada para lidar com os desafios trazidos pelas enchentes.</p>
+                <p class="footer_layout_direita_Texto">Somos um grupo de alunos apaixonados por tecnologia e preocupados
+                    com questões ambientais, especialmente relacionadas às enchentes. Nosso objetivo é informar e
+                    conscientizar a população sobre os riscos e impactos das enchentes, além de oferecer dicas e
+                    soluções para prevenção e mitigação desses eventos. Através de nosso site informativo, esperamos
+                    contribuir para a construção de uma sociedade mais resiliente e preparada para lidar com os desafios
+                    trazidos pelas enchentes.</p>
+            </div>
         </div>
-    </div>
-</footer>
-    
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JavaScript (com Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <!-- Configuração e uso do Firebase -->
+    <script>
+        // Configuração do Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyCaLWXz1H7l8MO75aQjDpHSiBNUhU56U9w",
+            authDomain: "scoficial-47c7b.firebaseapp.com",
+            projectId: "scoficial-47c7b",
+            storageBucket: "scoficial-47c7b.appspot.com",
+            messagingSenderId: "631304000718",
+            appId: "1:631304000718:web:fd255fed2cb60931cf6c9f",
+            measurementId: "G-GN0P3MC5TG"
+        };
+
+        // Inicializa o Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        // Seleciona o botão enviar
+        const enviarButton = document.getElementById('enviar');
+
+        // Adiciona um ouvinte de evento para o clique no botão
+        enviarButton.addEventListener('click', () => {
+            // Captura os valores dos campos de formulário
+            const email = document.getElementById('email').value;
+            const username = document.getElementById('username').value;
+            const escola = document.getElementById('escola').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+             // Verifica se todos os campos estão preenchidos
+             if (email && username && escola && mensagem) {
+                // Salva os dados no Firestore na coleção "Mensagens"
+                db.collection("Mensagens").add({
+                    email: email,
+                    username: username,
+                    escola: escola,
+                    mensagem: mensagem,
+                    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+                })
+                    .then((docRef) => {
+                        console.log("Documento adicionado com ID: ", docRef.id);
+                        alert("Mensagem enviada com sucesso!");
+                        // Limpa os campos do formulário após o envio
+                        document.getElementById('email').value = '';
+                        document.getElementById('username').value = '';
+                        document.getElementById('escola').value = '';
+                        document.getElementById('mensagem').value = '';
+                    })
+                    .catch((error) => {
+                        console.error("Erro ao adicionar documento: ", error);
+                        alert("Erro ao enviar mensagem. Por favor, tente novamente mais tarde.");
+                    });
+            } else {
+                alert("Por favor, preencha todos os campos do formulário.");
+            }
+        });
+    </script>
+
 </body>
+
 </html>
