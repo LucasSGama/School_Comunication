@@ -463,13 +463,19 @@ header {
 
 .Lousa_Background a {
     text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px 20px 10px 20px;
     color: black;
     font-size: 2vw;
     padding: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
-    transition: color 0.3s ease, border-color 0.3s ease; /* Transição suave */
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.5s ease; /* Transição suave */
+}
+
+.Lousa_Background a:hover {
+    background-color: rgba(245, 61, 233, 0.5);
 }
 
 .Lousa_Background a span {
@@ -480,7 +486,7 @@ header {
 }
 
 .Lousa_Background a span:hover {
-    color: rgb(254, 0, 229);
+    color: black;
 }
 
 .Lousa_Background a i {
