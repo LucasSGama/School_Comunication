@@ -223,17 +223,18 @@ header {
 .Inicio_Main_Ver_Mais {
     /* width: 30%; */
     /* border: 1px solid black; */
+    padding: 20px;
+
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    height: 640px;
+    height: 700px;
 }
 
 .Inicio_Boxs {
     display: flex;
     flex-direction: column;
-    overflow-y: auto; /* Adiciona um scroll vertical apenas quando necessário */
-    gap: 30px;
+    align-items: center;
+    overflow-y: scroll; /* Adiciona um scroll vertical apenas quando necessário */
 }
 
 .Inicio_Main_Ver_Mais h3 {
@@ -244,40 +245,67 @@ header {
 }
 
 .Inicio_Box_Veja_Mais {
-    margin-top: 10px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
     width: 300px;
     flex-shrink: 0;
     min-width: 400px;
+    height: 50%;
 }
 
 .Inicio_Box_Veja_Mais p {
     padding-left: 4px;
+    height: 20%;
+    border: 1px solid black;
+    display: -webkit-box; /* Define o contêiner como uma caixa flexível */
+    -webkit-box-orient: vertical; /* Define a orientação da caixa flexível como vertical */
+    -webkit-line-clamp: 3; /* Limita o texto a no máximo 3 linhas */
+    text-overflow: ellipsis; /* Adiciona reticências (...) no final do texto truncado */
+    overflow: hidden; /* Oculta o overflow */
+    white-space: normal; /* Permite a quebra de linha dentro do elemento */
 }
 
 .Inicio_Box_Veja_Mais iframe {
+    border: 1px solid black;
+
     width: 100%;
+    height: 80%;
 }
 
 @media (max-width: 1222.98px) {
     .Inicio_Boxs {
         flex-direction: row;
     }
-    .Inicio_Main_Ver_Mais {
-        height: 330px;
-    }
-}
-
-@media (max-width: 901.98px) {
     .Inicio_Box_Veja_Mais {
-        margin-top: 10px;
-        border: 1px solid black;
+        height: 100%;
+        border-bottom: 1px solid black;
+    }
+    .Inicio_Box_Veja_Mais p {
+        width: 70%;
+        height: 20%
+    }
+    .Inicio_Box_Veja_Mais iframe {
+        width: 70%;
+            height: 65%;
     }
     .Inicio_Boxs {
-        overflow-x: auto; /* Adiciona um scroll horizontal apenas quando necessário */
+        overflow-y: hidden; /* Adiciona um scroll vertical apenas quando necessário */
+    }
+    .Inicio_Main_Ver_Mais {
+        padding: 0;
+        height: 100%;
     }
     
 }
+
+/* @media (max-width: 901.98px) {
+    .Inicio_Box_Veja_Mais {
+        margin-top: 30px;
+    }
+    
+} */
 /* VER MAIS */
 
 .linha_preta_Layout {
@@ -412,7 +440,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: red;
+    background-color: rgba(185, 37, 33, 0.7);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
  }
@@ -474,10 +502,6 @@ header {
     align-items: center;
     gap: 10px;
     transition: color 0.3s ease, border-color 0.3s ease, background-color 0.5s ease; /* Transição suave */
-}
-
-.Lousa_Background a:hover {
-    background-color: rgba(245, 61, 233, 0.5);
 }
 
 .Lousa_Background a span {

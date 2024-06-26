@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 body {
-    background-color: #EF4136;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 0;
+    
 }
 
 header {
     position: fixed;
+    z-index: 999;
 }
 
 .navbar {
@@ -67,51 +64,287 @@ header {
     }
 }
 
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(185, 37, 33, 0.3);
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+
 .container {
-    border: 4px solid #EF4136;
-    width: 1200px;
-    height: 500px;
-    padding: 20px;
-    border-radius: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+.container_esquerda {
+    width: 50%;
+    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.Santa_Catarina {
-    height: 400px;
-    width: 400px;
-    border-radius: 10px;
-    margin-left: 100px;
-    z-index: 2;
+.container_esquerda_imagem {
+    width: 100%;
+    box-shadow: 7px 7px 60px #B92521; /* Adiciona uma sombra com a cor especificada */
+
 }
 
-.dark_square{
-    background-color: #B92521;
-    position: absolute;
-    border-radius: 10px;
-    height: 350px;
-    width: 650px;
-    margin-top: 150px;
-    margin-right: 400px;
-    z-index: 1;
-}
-
-.formulario {
-    margin-right: 150px;
-    z-index: 2;
-    border-radius: 5px;
-    margin-bottom: -10px;
+.container_direita {
+    width: 50%;
+    padding: 30px;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    font-family: 'Jomolhari', serif;
+    font-size: 2.5vw;
+    font-family: 'Inter', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
     font-weight: bold;
+
 }
 
 .text {
-    margin-top: -20px;
-    font-weight: 500;
+    font-size: 2vw;
+    text-align: justify;
+    font-family: 'Inter', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+
 }
+
+@media (max-width: 1222.98px) {
+    .container {
+        flex-direction: column;
+    }
+    .container_esquerda {
+        width: 100%;
+    }
+    .container_direita {
+        width: 100%;
+    }
+    .container_esquerda_imagem {
+        width: 70%;
+        box-shadow: 7px 7px 60px #B92521; /* Adiciona uma sombra com a cor especificada */
+    
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 4vw;
+    }
+    
+    .text {
+        font-size: 3.5vw;
+        text-align: justify;
+    }
+ }
+
+  /* FOOTER */
+
+  footer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(185, 37, 33, 0.7);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+
+ .footer_layout {
+
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+ }
+
+ .footer_layout_esquerda {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+ }
+
+ .footer_layout_esquerda h4 {
+    font-family: 'Inter', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+    font-size: 2vw;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    align-self: center;
+ }
+
+ .footer_layout_esquerda_inferior {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+ 
+ .Lousa_Background {
+    background-image: url(../img/Quadro_Negro.png);
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-size: cover; /* Cobrir toda a área */
+    background-position: bottom; /* Centralizar a imagem */
+    width: 100%; /* Ajustar a largura para 100% do contêiner */
+    max-width: 400px; /* Definir uma largura máxima */
+    height: 250px; /* Altura fixa */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: flex-start; /* Centralizar o conteúdo dentro do background */
+    border-radius: 20px;
+    box-sizing: border-box; /* Incluir padding e border na largura e altura */
+}
+
+.Lousa_Background a {
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px 20px 10px 20px;
+    color: black;
+    font-size: 2vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.5s ease; /* Transição suave */
+}
+
+.Lousa_Background a:hover {
+    background-color: rgba(245, 61, 233, 0.5);
+}
+
+.Lousa_Background a span {
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease; /* Transição suave */
+    font-family: 'Inter', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+}
+
+.Lousa_Background a span:hover {
+    color: black;
+}
+
+.Lousa_Background a i {
+    background-color: rgb(254, 0, 229);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.Lousa_Background a i:hover {
+    background-color: white;
+    color: rgb(254, 0, 229);
+}
+ 
+ .Coruja {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .Coruja img {
+    width: 100%;
+    height: 100%;
+ }
+
+ .footer_layout_direita {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+ }
+
+
+ .footer_layout_direita_Texto {
+    border-top: 1px solid black;
+    padding: 10px 10px 0 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1vw;
+    color: white;
+    text-align: justify;
+    font-family: 'Inter', serif;
+ }
+
+
+ /* RESPONSIVIDADE DO QUADRO NEGRO */
+ @media (max-width: 768px) {
+    .Lousa_Background {
+        height: 200px; /* Ajustar a altura para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .Lousa_Background {
+        height: 150px; /* Ajustar a altura para telas muito pequenas */
+    }
+}
+/* RESPONSIVIDADE DO QUADRO NEGRO */
+ 
+@media (max-width: 1222.98px) {
+    .footer_layout {
+        flex-direction: column;
+    }
+    .footer_layout_esquerda {
+        width: 100%;
+    }
+    .footer_layout_direita {
+        width: 100%;
+    }
+    .Coruja {
+        width: 23%;
+     }
+
+}
+ /* Breakpoint para telas médias */
+@media (max-width: 768px) {
+    .footer_layout_esquerda h4 {
+        font-size: 3.5vw;
+    } 
+    .Lousa_Background a {
+        font-size: 3.5vw;
+    }
+    .footer_layout_direita_Titulo {
+        font-size: 4vw;
+     }
+    
+     .footer_layout_direita_Texto {
+        font-size: 3vw;
+     }
+     .Coruja {
+        width: 35%;
+     }
+    
+ }
+ 
+ /* Breakpoint para telas pequenas */
+ @media (max-width: 680px) {
+    .Coruja {
+        width: 50%;
+     }
+    /* .Inicio_Textos_Informativos h1 {
+        font-size: 4vw;
+    }
+    .Box_Texto_Layout h5 {
+         font-size: 4vw;
+     }
+     .Box_Texto_Layout p {
+        font-size: 3.5vw;
+     } */
+ }
+
+ @media (max-width: 380px) {
+    .Coruja {
+        display: none;
+    }
+}
+ /* FOOTER */
