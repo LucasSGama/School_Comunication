@@ -156,6 +156,8 @@ header {
     font-weight: bold;
     font-size: 1.3vw;
     font-family: 'Jomolhari', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+
 }
 
 .Main_Materia_Principal_Texto p {
@@ -520,18 +522,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    border-left: 1px solid white;
  }
 
- .footer_layout_direita_Titulo {
-    border-top: 1px solid white;
-    font-weight: bold;
-    font-size: 1.5vw;
-    color: white;
-    font-family: 'Inter', serif; /* Aplica a fonte Jomolhari ao corpo do documento */
- }
 
  .footer_layout_direita_Texto {
+    border-top: 1px solid black;
+    padding: 10px 10px 0 10px;
+    margin-top: 20px;
     font-weight: bold;
     font-size: 1vw;
     color: white;
@@ -563,7 +560,6 @@ header {
     }
     .footer_layout_direita {
         width: 100%;
-        border-left: 0;
     }
     .Coruja {
         width: 23%;
