@@ -106,7 +106,7 @@ header {
 }
 
 .label {
-    font-family: 'Jomolhari', serif;
+    font-family: 'Inter', serif;
     font-size: 15px;
     font-weight: 700;
       
@@ -114,6 +114,8 @@ header {
 }
 
 .input {
+    font-family: 'Inter', serif;
+
     width: 99%;
     height: 10px;   
     padding: 15px;
