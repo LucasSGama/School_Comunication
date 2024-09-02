@@ -19,7 +19,5 @@
 4. Ferramentas de Desenvolvimento: Uso básico de ferramentas de desenvolvimento de navegadores para depuração e testes.
 
 Autores
-    Lucas Santos Gama - Desenvolvedor Principal
-    
-    Thierry - Desenvolvedor
+    Lucas Santos Gama - Desenvolvedor Principal, Raphael Thierry - Desenvolvedor
 
