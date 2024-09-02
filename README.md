@@ -16,9 +16,10 @@
 1. Linguagens de Marcação e Estilo: HTML5 e CSS3
 2. Linguagem de Programação: JavaScript
 3. Banco de Dados: Firebase para armazenar comentários e interações dos usuários
-4. Ferramentas de Desenvolvimento: Uso básico de ferramentas de desenvolvimento de navegadores para depuração e testes
+4. Ferramentas de Desenvolvimento: Uso básico de ferramentas de desenvolvimento de navegadores para depuração e testes.
 
 Autores
     Lucas Santos Gama - Desenvolvedor Principal
+    
     Thierry - Desenvolvedor
 
